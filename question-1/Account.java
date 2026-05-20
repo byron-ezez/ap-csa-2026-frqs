@@ -6,7 +6,7 @@ public Account(String requestedName){
   }
   else{
     username = requestedName+num;
-    while(isAvailable(username)==false){
+    while(!isAvailable(username)){
       num++;
       username = requestedName+num;
     }
